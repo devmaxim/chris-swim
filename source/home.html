@@ -1,0 +1,39 @@
+<partial src="template-parts/header/header.html"></partial>
+<body class="home page page-template-default">
+<partial src="template-parts/header/header-general.html"></partial>
+
+
+
+<partial src="template-parts/page-home/banner.html"></partial>
+<partial src="template-parts/page-home/service.html"></partial>
+<partial src="template-parts/inner/listings.html"></partial>
+<partial src="template-parts/inner/communities.html"></partial>
+<!--testimonials block here-->
+<partial src="template-parts/page-home/instagram.html"></partial>
+
+<script>
+    (function($) {
+        $(document).ready(function(){
+
+            $('.listings-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: true,
+                infinity: true,
+                nextArrow: '<div class="listing-arrow-next"><img src="../img/inner/listing-arrow-next.svg" alt="Next"></div>',
+                prevArrow: '<div class="listing-arrow-prev"><img src="../img/inner/listing-arrow-prev.svg" alt="Next"></div>',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 1,
+                            dots: false
+                        }
+                    }
+                ]
+            });
+
+        });
+    }(jQuery));
+</script>
+<partial src="template-parts/footer/footer.html"></partial>

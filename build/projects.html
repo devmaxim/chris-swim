@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>McAllister</title>
+        <link rel="stylesheet" href="../styles/css/all.min.css">
+        <link href="../styles/css/main-style.css" rel="stylesheet">
+        <link href="../styles/css/lightgallery.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src='../js/html5.js'></script>
+        <![endif]-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    
+    <body class="page page-template-template-projects">
+        <header id="masthead" class="fixed-top">
+            <div class="site-header-container d-flex align-items-center">
+                <div class="hamburger-menu"> <span class="line"></span>
+ <span class="line"></span>
+ <span class="line"></span>
+
+                </div>
+                <div class="container container-wide">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 text-left">
+                            <div class="logo"> <a href="#" class="custom-logo-link">
+              <img src="../img/header/custom-logo.svg" alt="Chris Swim" class="custom-logo">
+            </a>
+ <a href="#" class="custom-logo-link dark">
+              <img src="../img/header/custom-logo-dark.svg" alt="Chris Swim" class="dark-logo">
+            </a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9 text-right d-none d-lg-block">
+                            <div class="widget"> <a href="tel:9257661447" class="tel">925.766.1447</a>
+
+                                <div id="type-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-open d-flex flex-column justify-content-around">
+                        <img src="../img/header/custom-logo-menu.svg" alt="Chris & Tracy" class="img-fluid">
+                        <nav class="menu-open-nav">
+                            <ul class="list-unstyled d-flex flex-wrap flex-column text-center mt-5 mt-lg-0 flex-lg-row">
+                                <li> <a href="home.html">Home</a>
+
+                                </li>
+                                <li> <a href="about.html">About</a>
+
+                                </li>
+                                <li> <a href="#">Properties</a>
+
+                                </li>
+                                <li> <a href="#">Communities</a>
+
+                                </li>
+                                <li> <a href="#">What we offer</a>
+
+                                </li>
+                                <li> <a href="#">Market News</a>
+
+                                </li>
+                                <li> <a href="#">Contact</a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            $(function() {
+        
+                $('.hamburger-menu').click(openMenu);
+                function openMenu() {
+                  $('.menu-open').toggleClass('active');
+                  $(this).toggleClass('active');
+                }
+        
+                var typeText = document.getElementById('type-text');
+        
+                var typewriter = new Typewriter(typeText, {
+                    loop: true,
+                    delay: 75,
+                });
+        
+                typewriter.typeString('Moraga')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Orinda')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Lafayette')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .pauseFor(1000)
+                    .start();
+            })
+        </script>
+        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+        <footer id="colophon" class="site-footer">
+            <div class="container container-wide">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center text-lg-left"> <span><strong>Chris Swim DRE#:</strong> 00943989</span> 
+                        <br> <span><strong>Tracy Keaton DRE#:</strong> 01051349</span>
+                    </div>
+                    <div class="col-lg-4 text-center"> <span>©2020 Chris Swim. All Rights Reserved.</span>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-right">
+                        <img src="../img/inner/social-image.png" alt="socials" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #colophon -->
+        <script src='../js/ajax-load-more.js'></script>
+        <script src='../js/bootstrap.bundle.min.js'></script>
+        <script src='../js/lightgallery-all.min.js'></script>
+        <script src='../js/slick.min.js'></script>
+        <script src='../js/custom.js'></script>
+    </body>
+
+</html>

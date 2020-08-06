@@ -1,0 +1,51 @@
+.social-navigation{
+  &:before{
+    content: "";
+    //background: url('../../img/zllow-hover.svg'), url('../../img/realtor-com_logo-hover.png');
+    //background-position: -999999px -999999px, -999999px -999999px;
+  }
+
+  ul.social-links-menu{
+    list-style: none;
+    padding: 0;
+    margin: rem(0 0 0 -5px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    li{
+      &:not(:last-child){
+        margin-right: 12px;
+      }
+      a{
+        display: block;
+        padding: rem(2px);
+        svg.icon{
+          fill: $color-bg;
+          max-width: rem(25px);
+          max-height: rem(25px);
+          border-radius: 100%;
+          padding: rem(4px);
+          -webkit-transition: background-color 300ms ease;
+          transition: background-color 300ms ease;
+          background-color: $color-white;
+          &:hover{
+            background-color : $color-active !important;
+          }
+          &.icon-linkedin, &.icon-youtube{
+            overflow: initial;
+          }
+        }
+      }
+    }
+  }
+}

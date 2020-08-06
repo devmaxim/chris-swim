@@ -1,0 +1,41 @@
+#pre-footer {
+  min-height: 500px;
+  position: relative;
+  @include darken-bg(.6);
+  @include media-breakpoint-up(lg) {
+    min-height: 720px;
+  }
+  img {
+    width: rem(300px);
+    height: rem(100px);
+    margin-bottom: rem(40px);
+  }
+  .entry-content, p a {
+    color: $color-white;
+    text-align: center;
+    font-size: rem(18px);
+    letter-spacing: 0.05em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @include media-breakpoint-up(lg) {
+      font-size: rem(24px);
+      line-height: 2;
+    }
+  }
+  a:hover {
+    color: #9c9c9c;
+  }
+  hr {
+    background-color: #fff;
+  }
+  p {
+    @include media-breakpoint-up(lg) {
+      padding: rem(0 40px);
+    }
+  }
+}
+footer#colophon {
+  background-color: $color-bg;
+  color: $color-white;
+  padding: rem(30px 0);
+  letter-spacing: 0.105em;
+}

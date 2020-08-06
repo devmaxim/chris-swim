@@ -1,0 +1,191 @@
+header#masthead {
+  background: #fff;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+  .site-header-container {
+    height: rem(80px);
+    @include media-breakpoint-up(lg) {
+      height: rem(120px);
+    }
+    .hamburger-menu {
+      border: 0;
+      position: absolute;
+      width: 40px;
+      height: 26px;
+      left: auto;
+      right: 20px;
+      top: 40px;
+      z-index: 1000;
+      cursor: pointer;
+      margin-left: -30px;
+      margin-top: -15px;
+      outline: 0;
+      @include media-breakpoint-up(lg) {
+        left: 50%;
+        top: 60px;
+        width: 60px;
+      }
+      .line {
+        width: 40px;
+        height: 2px;
+        background-color: $color-primary;
+        -webkit-transition: .4s;
+        transition: .4s;
+        display: block;
+        position: absolute;
+        left: 0;
+        @include media-breakpoint-up(lg) {
+          width: 60px;
+        }
+      }
+      .line:nth-child(1) {
+        top: 0;
+      }
+      .line:nth-child(2) {
+        top: 50%;
+        margin-top: -1px;
+      }
+      .line:nth-child(3) {
+        bottom: 0;
+      }
+      &.active {
+        .line:nth-child(1) {
+          top: 50%;
+          margin-top: -1px;
+          -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+        .line:nth-child(2) {
+          opacity: 0;
+        }
+        .line:nth-child(3) {
+          bottom: 50%;
+          margin-bottom: -1px;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+          background-color: rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+    .logo {
+      position: relative;
+      .custom-logo-link {
+        img {
+          display: none;
+          opacity: 0;
+          @include img-fluid();
+          @include media-breakpoint-down(md) {
+            max-width: rem(200px);
+          }
+          &.dark-logo {
+            z-index: -1;
+            display: block;
+            opacity: 1;
+            -webkit-transition: all .5s ease-out;
+            transition: all .5s ease-out;
+          }
+        }
+      }
+    }
+    .widget {
+      a {
+        font-size: rem(24px);
+      }
+    }
+    .menu {
+      background-color: $color-bg;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      .menu-open {
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all .5s ease-out;
+        transition: all .5s ease-out;
+        opacity: 0;
+        visibility: hidden;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+          @include media-breakpoint-down(md) {
+            max-width: rem(205px);
+          }
+        }
+        &.active {
+          height: 100vh;
+          opacity: 1;
+          visibility: visible;
+          outline: 0;
+          padding: rem(60px 0);
+        }
+        &-nav {
+          position: absolute;
+          bottom: 10%;
+          z-index: 1;
+          width: 100%;
+          padding-left: 15px;
+          padding-right: 15px;
+          @include media-breakpoint-down(sm){
+            top: 220px;
+            bottom: auto;
+          }
+          ul {
+            li {
+              @include media-breakpoint-down(sm){
+                text-align: center;
+              }
+              &:not(:last-child) {
+                @include media-breakpoint-up(lg){
+                  border-right: 1px solid rgba(255, 255, 255, 0.5);
+                }
+              }
+              &.menu-item-has-children{
+                .icon {
+                  display: none;
+                }
+                .svg-fallback.icon-angle-down {
+                  display: none;
+                }
+                ul.sub-menu{
+                  display: none;
+                }
+              }
+              @include media-breakpoint-down(lg) {
+                margin-bottom: rem(10px);
+              }
+              a {
+                line-height: 1;
+                color: $color-white;
+                font-size: rem(18px);
+                text-transform: uppercase;
+                @include media-breakpoint-up(lg) {
+                  padding: 20px;
+                }
+                @include media-breakpoint-up(xl) {
+                  font-size: rem(20px);
+                }
+                &:hover {
+                  color: #9c9c9c;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

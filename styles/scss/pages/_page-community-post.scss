@@ -1,0 +1,11 @@
+#section-community-post {
+  .communities-item {
+    margin-bottom: rem(30px);
+    h2 {
+      @include responsive-font-size($h3-responsive-font-sizes);
+    }
+  }
+  .community-post-image {
+    padding-top: 76%;
+  }
+}

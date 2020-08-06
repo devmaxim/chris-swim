@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chris Swim & Tracy Keaton</title>
+        <link rel="stylesheet" href="../styles/css/all.min.css">
+        <link href="../styles/css/main-style.css" rel="stylesheet">
+        <link href="../styles/css/lightgallery.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src='../js/html5.js'></script>
+        <![endif]-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    
+    <body class="page page-template-template-contact">
+        <header id="masthead" class="fixed-top">
+            <div class="site-header-container d-flex align-items-center">
+                <div class="hamburger-menu"> <span class="line"></span>
+ <span class="line"></span>
+ <span class="line"></span>
+
+                </div>
+                <div class="container container-wide">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 text-left">
+                            <div class="logo"> <a href="home.html" class="custom-logo-link">
+              <img src="../img/header/custom-logo.svg" alt="Chris Swim" class="custom-logo">
+            </a>
+ <a href="home.html" class="custom-logo-link dark">
+              <img src="../img/header/custom-logo-dark.svg" alt="Chris Swim" class="dark-logo">
+            </a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9 text-right d-none d-lg-block">
+                            <div class="widget"> <a href="tel:9257661447" class="tel">925.766.1447</a>
+
+                                <div id="type-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-open d-flex flex-column justify-content-start justify-content-lg-around">
+                        <img src="../img/header/custom-logo-menu.svg" alt="Chris & Tracy" class="img-fluid">
+                        <nav class="menu-open-nav">
+                            <ul class="list-unstyled d-flex flex-wrap flex-column text-center mt-5 mt-lg-0 flex-lg-row">
+                                <li> <a href="home.html">Home</a>
+
+                                </li>
+                                <li> <a href="about.html">About</a>
+
+                                </li>
+                                <li> <a href="property.html">Properties</a>
+
+                                </li>
+                                <li> <a href="communities.html">Communities</a>
+
+                                </li>
+                                <li> <a href="offer.html">What we offer</a>
+
+                                </li>
+                                <li> <a href="market.html">Market News</a>
+
+                                </li>
+                                <li> <a href="contact.html">Contact</a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            $(function() {
+        
+                $('.hamburger-menu').click(openMenu);
+                function openMenu() {
+                  $('.menu-open').toggleClass('active');
+                  $(this).toggleClass('active');
+                }
+        
+                var typeText = document.getElementById('type-text');
+        
+                var typewriter = new Typewriter(typeText, {
+                    loop: true,
+                    delay: 75,
+                });
+        
+                typewriter.typeString('Moraga')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Orinda')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Lafayette')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .pauseFor(1000)
+                    .start();
+            })
+        </script>
+        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+        <div id="section-contact">
+            <div class="contact-wrapper d-flex flex-wrap flex-column flex-lg-row">
+                <div class="address d-flex flex-column align-items-center justify-content-center">
+                    <img src="../img/contact/contact-logo.svg" alt="Chris & Tracy" class="mb-4 mb-lg-5 img-fluid">
+                    <p>201 Lafayette Circle, Ste 100
+                        <br>Lafayette, CA 94549
+                        <br> <a href="tel:9257661447">925.766.1447</a> 
+                        <br>51 Moraga Way #1
+                        <br>Orinda, CA 94563</p> <a href="#" class="btn btn-primary mt-3">See Orinda Map</a>
+
+                    <span
+                    class="bottom-lines d-none d-lg-block"></span> <span class="top-lines d-none d-lg-block"></span>
+
+                </div>
+                <div class="map">
+                    <div class="section-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.565826402956!2d-91.90903838454777!3d30.106618522587215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86237e790dc0636f%3A0x576c5456699807df!2zTGFmYXlldHRlIENpciwgMiwgTEEgNzA1MTgsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1592934492644!5m2!1sru!2sru"
+                        allowfullscreen="" aria-hidden="false"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pre-footer" class="d-flex justify-content-center align-items-center"
+        style="background: transparent url('../img/inner/main-image.png') center/cover no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                        <img src="../img/inner/compass.svg" alt="compass" class="img-fluid">
+                        <div class="entry-content">
+                            <p> <a href="tel:9257661447">925.766.1447</a> 
+                                <br>201 Lafayette Circle, Ste 100
+                                <br>Lafayette, CA 94549</p>
+                            <hr>
+                            <p>51 Moraga Way #1
+                                <br>Orinda, CA 94563</p>
+                            <hr>
+                            <p>Email: <a href="mailto:chris@chrisswim.com">chris@chrisswim.com</a> 
+                                <br>Email: <a href="mailto:tracy@tracykeaton.com">tracy@tracykeaton.com</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="colophon" class="site-footer">
+            <div class="container container-wide">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center text-lg-left"> <span><strong>Chris Swim DRE#:</strong> 00943989</span> 
+                        <br> <span><strong>Tracy Keaton DRE#:</strong> 01051349</span>
+
+                    </div>
+                    <div class="col-lg-4 text-center"> <span>©2020 Chris Swim. All Rights Reserved.</span>
+
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-right">
+                        <img src="../img/inner/social-image.png" alt="socials" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #colophon -->
+        <script src='../js/ajax-load-more.js'></script>
+        <script src='../js/bootstrap.bundle.min.js'></script>
+        <script src='../js/lightgallery-all.min.js'></script>
+        <script src='../js/slick.min.js'></script>
+        <script src='../js/custom.js'></script>
+    </body>
+
+</html>

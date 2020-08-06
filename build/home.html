@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chris Swim & Tracy Keaton</title>
+        <link rel="stylesheet" href="../styles/css/all.min.css">
+        <link href="../styles/css/main-style.css" rel="stylesheet">
+        <link href="../styles/css/lightgallery.min.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src='../js/html5.js'></script>
+        <![endif]-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    </head>
+    
+    <body class="home page page-template-default">
+        <header id="masthead" class="fixed-top">
+            <div class="site-header-container d-flex align-items-center">
+                <div class="hamburger-menu"> <span class="line"></span>
+ <span class="line"></span>
+ <span class="line"></span>
+
+                </div>
+                <div class="container container-wide">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 text-left">
+                            <div class="logo"> <a href="home.html" class="custom-logo-link">
+              <img src="../img/header/custom-logo.svg" alt="Chris Swim" class="custom-logo">
+            </a>
+ <a href="home.html" class="custom-logo-link dark">
+              <img src="../img/header/custom-logo-dark.svg" alt="Chris Swim" class="dark-logo">
+            </a>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-9 text-right d-none d-lg-block">
+                            <div class="widget"> <a href="tel:9257661447" class="tel">925.766.1447</a>
+
+                                <div id="type-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="menu-open d-flex flex-column justify-content-start justify-content-lg-around">
+                        <img src="../img/header/custom-logo-menu.svg" alt="Chris & Tracy" class="img-fluid">
+                        <nav class="menu-open-nav">
+                            <ul class="list-unstyled d-flex flex-wrap flex-column text-center mt-5 mt-lg-0 flex-lg-row">
+                                <li> <a href="home.html">Home</a>
+
+                                </li>
+                                <li> <a href="about.html">About</a>
+
+                                </li>
+                                <li> <a href="property.html">Properties</a>
+
+                                </li>
+                                <li> <a href="communities.html">Communities</a>
+
+                                </li>
+                                <li> <a href="offer.html">What we offer</a>
+
+                                </li>
+                                <li> <a href="market.html">Market News</a>
+
+                                </li>
+                                <li> <a href="contact.html">Contact</a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <script>
+            $(function() {
+        
+                $('.hamburger-menu').click(openMenu);
+                function openMenu() {
+                  $('.menu-open').toggleClass('active');
+                  $(this).toggleClass('active');
+                }
+        
+                var typeText = document.getElementById('type-text');
+        
+                var typewriter = new Typewriter(typeText, {
+                    loop: true,
+                    delay: 75,
+                });
+        
+                typewriter.typeString('Moraga')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Orinda')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Lafayette')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .pauseFor(1000)
+                    .start();
+            })
+        </script>
+        <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+        <section id="section-main-banner">
+            <div class="main-video" style="background: transparent url('../img/inner/main-image.png') center top/cover no-repeat;">
+                <iframe src="https://player.vimeo.com/video/428300168?background=1&autoplay=1&loop=1&byline=0&title=0"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <div class="main-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center d-flex flex-column align-items-center">
+                            <div class="section-title">
+                                 <h1>Lorem Ipsum Dolor</h1>
+
+                                 <h2>Neque porro quisquam est qui dolorem</h2>
+
+                            </div> <a href="#" class="btn btn-primary">Find The Right Home for You <span></span></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../img/inner/compass.svg" alt="compass" class="main-bottom-image img-fluid">
+        </section>
+        <section id="section-service" class="section-padding">
+            <div class="container container-wide section-service-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="service-inner">
+                            <header class="section-title">
+                                 <h2>expertly, full service...</h2>
+
+                            </header>
+                            <p> <strong>The Chris Swim & Tracy Keaton Team is a ... (amazing stuff!) serving the Lamorinda blah blah blah</strong> ...lorem
+                                ipsum dolor sit amet, consectutur adipiscing elit. Mauris non purus odio.
+                                Etiam eu mi nec purus ornare suscipit. Maecenas pellentesque posuere hendrerit.............</p>
+                            <p>lorem ipsum dolor sit amet, consectutur adipiscing elit. Mauris non purus
+                                odio. Etiam eu mi nec purus ornare suscipit. Maecenas pellentesque posuere
+                                hendrerit.............</p> <a href="#" class="btn btn-primary mt-5">Learn More</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-listings" class="section-padding">
+            <div class="container container-wide">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title">
+                             <h1>Featured Listings</h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row listings-slider">
+                    <div class="col-lg-4 mb-5 slider-item">
+                        <div class="listing-item">
+                            <div class="listing-item-image mb-5"> <a href="property.html" class="listing-bg" style="background: transparent url('../img/listings/listing-item-1.png') center top/cover no-repeat;"></a>
+
+                                <span
+                                class="price">$810,000</span> <span class="status">Sold</span>
+
+                            </div>
+                            <div class="listing-text text-center">
+                                 <h2>84 Midhill Road <br>Martinez, CA</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>4 Beds</li>
+                                    <li>3 Baths</li>
+                                    <li>3,300 Sq. Ft.</li>
+                                </ul> <span>$810,000</span>
+ <a href="#" class="btn btn-primary mx-auto">View listing</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 slider-item">
+                        <div class="listing-item">
+                            <div class="listing-item-image mb-5"> <a href="#" class="listing-bg" style="background: transparent url('../img/listings/listing-item-2.png') center top/cover no-repeat;"></a>
+
+                                <span
+                                class="price">$3,250,000</span> <span class="status">ACTIVE</span>
+
+                            </div>
+                            <div class="listing-text text-center">
+                                 <h2>1140 Camino Vallecito <br>Lafayette, CA</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>4+ Beds</li>
+                                    <li>4.5 Baths</li>
+                                    <li>3,800 Sq. Ft.</li>
+                                </ul> <span>$3,250,000</span>
+ <a href="#" class="btn btn-primary mx-auto">View listing</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 slider-item">
+                        <div class="listing-item">
+                            <div class="listing-item-image mb-5"> <a href="#" class="listing-bg" style="background: transparent url('../img/listings/listing-item-3.png') center top/cover no-repeat;"></a>
+
+                                <span
+                                class="price">$3,195,000</span> <span class="status">PENDING</span>
+
+                            </div>
+                            <div class="listing-text text-center">
+                                 <h2>84 Midhill Road <br>Martinez, CA</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>5+ Beds</li>
+                                    <li>4.5 Baths</li>
+                                </ul> <span>$3,195,000</span>
+ <a href="#" class="btn btn-primary mx-auto">View listing</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 slider-item">
+                        <div class="listing-item">
+                            <div class="listing-item-image mb-5"> <a href="#" class="listing-bg" style="background: transparent url('../img/listings/listing-item-1.png') center top/cover no-repeat;"></a>
+
+                                <span
+                                class="price">$810,000</span> <span class="status">Sold</span>
+
+                            </div>
+                            <div class="listing-text text-center">
+                                 <h2>84 Midhill Road <br>Martinez, CA</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>4 Beds</li>
+                                    <li>3 Baths</li>
+                                    <li>3,300 Sq. Ft.</li>
+                                </ul> <span>$810,000</span>
+ <a href="#" class="btn btn-primary mx-auto">View listing</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 slider-item">
+                        <div class="listing-item">
+                            <div class="listing-item-image mb-5"> <a href="#" class="listing-bg" style="background: transparent url('../img/listings/listing-item-2.png') center top/cover no-repeat;"></a>
+
+                                <span
+                                class="price">$3,250,000</span> <span class="status">ACTIVE</span>
+
+                            </div>
+                            <div class="listing-text text-center">
+                                 <h2>1140 Camino Vallecito <br>Lafayette, CA</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>4+ Beds</li>
+                                    <li>4.5 Baths</li>
+                                    <li>3,800 Sq. Ft.</li>
+                                </ul> <span>$3,250,000</span>
+ <a href="#" class="btn btn-primary mx-auto">View listing</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 slider-item">
+                        <div class="listing-item">
+                            <div class="listing-item-image mb-5"> <a href="#" class="listing-bg" style="background: transparent url('../img/listings/listing-item-3.png') center top/cover no-repeat;"></a>
+
+                                <span
+                                class="price">$3,195,000</span> <span class="status">PENDING</span>
+
+                            </div>
+                            <div class="listing-text text-center">
+                                 <h2>84 Midhill Road <br>Martinez, CA</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>5+ Beds</li>
+                                    <li>4.5 Baths</li>
+                                </ul> <span>$3,195,000</span>
+ <a href="#" class="btn btn-primary mx-auto">View listing</a>
+
+                            </div>
+                        </div>
+                    </div> <a href="#" class="btn btn-primary mt-5 mx-auto">Load More</a>
+
+                </div>
+            </div>
+        </section>
+        <section id="section-communities" class="section-margin">
+            <div class="container container-wide">
+                <div class="row">
+                    <div class="col-12">
+                        <header class="section-title">
+                             <h2>Communities</h2>
+
+                        </header>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4"> <a href="community-post.html" class="communities-item">
+          <div class="communities-image" style="background: transparent url('../img/communities/communities-image-1.png') center top/cover no-repeat;"></div>
+          <h3>Moraga</h3>
+        </a>
+
+                    </div>
+                    <div class="col-lg-4"> <a href="community-post.html" class="communities-item">
+          <div class="communities-image" style="background: transparent url('../img/communities/communities-image-2.png') center top/cover no-repeat;"></div>
+          <h3>Lafayette</h3>
+        </a>
+
+                    </div>
+                    <div class="col-lg-4"> <a href="community-post.html" class="communities-item">
+          <div class="communities-image" style="background: transparent url('../img/communities/communities-image-3.png') center top/cover no-repeat;"></div>
+          <h3>Orinda</h3>
+        </a>
+
+                    </div>
+                    <div class="col-lg-4"> <a href="community-post.html" class="communities-item">
+          <div class="communities-image" style="background: transparent url('../img/communities/communities-image-4.png') center top/cover no-repeat;"></div>
+          <h3>Orinda woods</h3>
+        </a>
+
+                    </div>
+                    <div class="col-lg-4"> <a href="community-post.html" class="communities-item">
+          <div class="communities-image" style="background: transparent url('../img/communities/communities-image-5.png') center top/cover no-repeat;"></div>
+          <h3>Alameda County</h3>
+        </a>
+
+                    </div>
+                    <div class="col-lg-4"> <a href="community-post.html" class="communities-item">
+          <div class="communities-image" style="background: transparent url('../img/communities/communities-image-6.png') center top/cover no-repeat;"></div>
+          <h3>Contra Costa County</h3>
+        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--testimonials block here-->
+        <section id="section-insta" class="section-padding">
+            <div class="container container-wide">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="../img/insta.png" alt="instagram" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            (function($) {
+                $(document).ready(function(){
+        
+                    $('.listings-slider').slick({
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        dots: true,
+                        infinity: true,
+                        nextArrow: '<div class="listing-arrow-next"><img src="../img/inner/listing-arrow-next.svg" alt="Next"></div>',
+                        prevArrow: '<div class="listing-arrow-prev"><img src="../img/inner/listing-arrow-prev.svg" alt="Next"></div>',
+                        responsive: [
+                            {
+                                breakpoint: 992,
+                                settings: {
+                                    slidesToShow: 1,
+                                    dots: false
+                                }
+                            }
+                        ]
+                    });
+        
+                });
+            }(jQuery));
+        </script>
+        <div id="pre-footer" class="d-flex justify-content-center align-items-center"
+        style="background: transparent url('../img/inner/main-image.png') center/cover no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                        <img src="../img/inner/compass.svg" alt="compass" class="img-fluid">
+                        <div class="entry-content">
+                            <p> <a href="tel:9257661447">925.766.1447</a> 
+                                <br>201 Lafayette Circle, Ste 100
+                                <br>Lafayette, CA 94549</p>
+                            <hr>
+                            <p>51 Moraga Way #1
+                                <br>Orinda, CA 94563</p>
+                            <hr>
+                            <p>Email: <a href="mailto:chris@chrisswim.com">chris@chrisswim.com</a> 
+                                <br>Email: <a href="mailto:tracy@tracykeaton.com">tracy@tracykeaton.com</a>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="colophon" class="site-footer">
+            <div class="container container-wide">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center text-lg-left"> <span><strong>Chris Swim DRE#:</strong> 00943989</span> 
+                        <br> <span><strong>Tracy Keaton DRE#:</strong> 01051349</span>
+
+                    </div>
+                    <div class="col-lg-4 text-center"> <span>©2020 Chris Swim. All Rights Reserved.</span>
+
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-right">
+                        <img src="../img/inner/social-image.png" alt="socials" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- #colophon -->
+        <script src='../js/ajax-load-more.js'></script>
+        <script src='../js/bootstrap.bundle.min.js'></script>
+        <script src='../js/lightgallery-all.min.js'></script>
+        <script src='../js/slick.min.js'></script>
+        <script src='../js/custom.js'></script>
+    </body>
+
+</html>

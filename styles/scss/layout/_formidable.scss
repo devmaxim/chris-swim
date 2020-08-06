@@ -1,0 +1,56 @@
+// Basic styles
+.frm_style_formidable-style.with_frm_style {
+
+  .frm-show-form {
+
+    .frm_form_title{
+
+    }
+
+    div.frm_description p {
+
+    }
+
+    .frm_fields_container {
+
+      .form-field {
+
+        .frm_primary_label{
+
+        }
+        input:not([type=file]):focus, textarea:focus {
+
+        }
+        input:not([type=file]) {
+          border-left-color: transparent;
+          border-top-color: transparent;
+          border-right-color: transparent;
+          background-color: transparent;
+          @include custom-placeholder(){
+            color: $color-title;
+          }
+        }
+        textarea {
+          border-left-color: transparent;
+          border-top-color: transparent;
+          border-right-color: transparent;
+          background-color: transparent;
+          @include custom-placeholder(){
+            color: $color-title;
+          }
+        }
+      }
+    }
+
+    .frm_submit button {
+      box-shadow: none;
+      outline: none;
+      letter-spacing: 0.03em;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      &:hover, &:focus {
+
+      }
+    }
+  }
+}

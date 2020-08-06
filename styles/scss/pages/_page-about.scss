@@ -1,0 +1,108 @@
+body.page-template-template-about {
+  .section-title {
+    text-align: left;
+    &:before {
+      left: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+  }
+
+  #section-about {
+    position: relative;
+    &:after {
+      @include media-breakpoint-up(lg) {
+        @include pluses('+ + + + + +');
+        bottom: -20px;
+        left: -webkit-calc((50vw - 144px) + 29% );
+        left: calc((50vw - 144px) + 29% );
+        letter-spacing: 10px;
+      }
+    }
+    .about-image {
+      @include responsive-ratio-background(8,7);
+    }
+    .about-text {
+      padding: rem(20px);
+      @include media-breakpoint-up(lg) {
+        padding: rem(20px 20px 20px 0);
+      }
+      @include media-breakpoint-up(xl) {
+        padding: rem(100px);
+      }
+      @media (min-width: 1200px) and (max-width: 1410px) {
+        padding: rem(50px);
+      }
+      .section-title {
+        h1 {
+          letter-spacing: rem(2.4px);
+        }
+      }
+    }
+
+
+  }
+
+  #about-team-bio {
+    .team-image {
+      @include responsive-ratio-background(4,4);
+    }
+    .team-content {
+      .section-title {
+        margin-bottom: rem(40px);
+        h2 {
+          @include responsive-font-size($h3-responsive-font-sizes);
+        }
+      }
+      h3 {
+        font-size: rem(20px);
+        margin: rem(16px 0 20px 0);
+      }
+      p:not(:first-of-type) {
+        display: none;
+      }
+
+
+
+      .button-more,.button-bio {
+        position: relative;
+        padding-right: rem(15px);
+        cursor: pointer;
+        @include media-breakpoint-up(lg) {
+          font-size: rem(20px);
+        }
+        span {
+          font-weight: normal;
+          font-family: $font-bold;
+        }
+        &:after {
+          content: url("../../img/inner/button-more-arrow.svg");
+          position: absolute;
+          right: 0;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+          line-height: 1.5;
+        }
+        &.active {
+          &:after {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .pluses {
+      position: relative;
+      &:after {
+        @include pluses('+ + + + + +');
+        bottom: 0;
+        left: 0;
+        letter-spacing: 10px;
+      }
+    }
+  }
+
+}

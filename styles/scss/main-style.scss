@@ -1,0 +1,55 @@
+/*
+ * Base
+ ***********************************************************************************************************************/
+@import "base/rem-calc";
+@import "base/variables";
+@import "base/fonts";
+
+
+/*
+ * Libraries
+ ***********************************************************************************************************************/
+@import "libraries/bootstrap-4.1/bootstrap";
+
+@import "libraries/slick-carousel/slick";
+@import "libraries/slick-carousel/slick-theme";
+
+@import "libraries/aos/aos";
+
+
+
+/*
+ * Layout
+ ***********************************************************************************************************************/
+@import "base/general";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/formidable";
+
+
+/*
+* Inner
+ ***********************************************************************************************************************/
+@import "inner/communities";
+@import "inner/listings";
+@import "inner/testimonials";
+
+
+/*
+ * Pages
+ ***********************************************************************************************************************/
+@import "pages/blog";
+@import "pages/page-home";
+@import "pages/page-about";
+@import "pages/page-property";
+@import "pages/page-community-post";
+@import "pages/page-offer";
+@import "pages/page-contact";
+
+
+
+/*
+ * Sitewide Sections
+ ***********************************************************************************************************************/
+@import "sitewide-sections/social-icons";
+@import "sitewide-sections/instagram";

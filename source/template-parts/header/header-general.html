@@ -1,0 +1,99 @@
+<header id="masthead" class="fixed-top">
+
+  <div class="site-header-container d-flex align-items-center">
+    <div class="hamburger-menu">
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+    <div class="container container-wide">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-3 text-left">
+          <div class="logo">
+            <a href="home.html" class="custom-logo-link">
+              <img src="../img/header/custom-logo.svg" alt="Chris Swim" class="custom-logo">
+            </a>
+            <a href="home.html" class="custom-logo-link dark">
+              <img src="../img/header/custom-logo-dark.svg" alt="Chris Swim" class="dark-logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-9 text-right d-none d-lg-block">
+          <div class="widget">
+            <a href="tel:9257661447" class="tel">925.766.1447</a>
+            <div id="type-text"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="menu">
+      <div class="menu-open d-flex flex-column justify-content-start justify-content-lg-around">
+        <img src="../img/header/custom-logo-menu.svg" alt="Chris & Tracy" class="img-fluid">
+        <nav class="menu-open-nav">
+          <ul class="list-unstyled d-flex flex-wrap flex-column text-center mt-5 mt-lg-0 flex-lg-row">
+            <li>
+              <a href="home.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="property.html">Properties</a>
+            </li>
+            <li>
+              <a href="communities.html">Communities</a>
+            </li>
+            <li>
+              <a href="offer.html">What we offer</a>
+            </li>
+            <li>
+              <a href="market.html">Market News</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+</header>
+
+<script>
+    $(function() {
+
+        $('.hamburger-menu').click(openMenu);
+        function openMenu() {
+          $('.menu-open').toggleClass('active');
+          $(this).toggleClass('active');
+        }
+
+        var typeText = document.getElementById('type-text');
+
+        var typewriter = new Typewriter(typeText, {
+            loop: true,
+            delay: 75,
+        });
+
+        typewriter.typeString('Moraga')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Orinda')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('Lafayette')
+            .pauseFor(2000)
+            .deleteAll()
+            .pauseFor(1000)
+            .start();
+    })
+
+</script>
+<script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+

@@ -1,0 +1,177 @@
+// BLOG
+// =====================================================================================================================
+#articles-news {
+  .posts-loop {
+
+    .blog-loop-item {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 40px;
+      .post-thumbnail {
+        position: relative;
+
+        .bg {
+          @include responsive-ratio-background(16,9);
+          display: block;
+          -webkit-transition: opacity 300ms ease;
+          transition: opacity 300ms ease;
+        }
+
+        .data {
+          color: $color-black;
+          z-index: 5;
+          padding: 20px 0;
+          @include media-breakpoint-up(lg) {
+            padding: 30px 0;
+          }
+
+          .entry-title {
+            font-size: 20px;
+            display: block;
+            font-family: $font-medium;
+            font-weight: 500;
+            margin-bottom: 10px;
+            -webkit-transition: all 300ms ease;
+            transition: all 300ms ease;
+            @include media-breakpoint-down(sm){
+              font-size: 20px;
+              line-height: 1.3;
+            }
+          }
+
+          .entry-excerpt {
+            color: $color-primary;
+            font-size: 16px;
+            display: inline-block;
+          }
+
+          time{
+            margin-bottom: 15px;
+            font-weight: 900;
+          }
+
+          .more {
+            max-width: 250px;
+            @include media-breakpoint-down(sm){
+              font-size: 15px;
+              max-width: 200px;
+            }
+          }
+        }
+
+      }
+
+      .inner-wrapper {
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+        padding: 20px 0;
+        position: absolute;
+        z-index: 2;
+
+        .entry-title {
+          font-size: 20px;
+          margin-bottom: 20px;
+          line-height: 1.4;
+          font-weight: 700;
+          a {
+            color: #383A3C;
+
+            &:hover {
+              color: $color-primary;
+            }
+          }
+        }
+
+        .entry-content {
+          color: $color-primary;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: 0.58px;
+          margin-bottom: 15px;
+        }
+
+
+      }
+
+      &:hover {
+        .post-thumbnail {
+          .bg {
+            opacity: 0.7;
+          }
+        }
+        .btn-primary {
+          color: #FFFFFF;
+          &:before {
+            width: 100%;
+            background: #000;
+          }
+          &:after {
+            right: -webkit-calc(100% - 9px);
+            right: calc(100% - 9px);
+            background-color: transparent;
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*
+ * SINGLE POST
+ ***********************************************************************************************************************/
+#blog-loop-item-single{
+  .entry-content{
+    color:$color-primary;
+    line-height: 1.5;
+    font-size: rem(16px);
+    @include media-breakpoint-up(lg){
+      padding-right: rem(100px);
+      font-size: rem(18px);
+    }
+    img{
+      @include img-fluid();
+    }
+  }
+  .widget-area{
+    background: #F5F5F5;
+    padding: rem(40px 20px);
+    @include media-breakpoint-up(lg){
+      padding: rem(60px 40px);
+    }
+    .widget-title{
+      margin-bottom: rem(30px);
+      font-size: rem(30px);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    ul.rpwe-ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{
+        padding: 20px 0;
+        &:not(:last-child){
+          border-bottom: 1px solid #B6B6B6;
+        }
+        .rpwe-title{
+          font-size: 22px;
+          line-height: 1.4;
+          margin: 0 0 10px 0;
+          a{
+            color: $color-black;
+            line-height: 1.4;
+            &:hover{
+              color: $color-active;
+            }
+          }
+        }
+        .more-link{
+          display: block;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

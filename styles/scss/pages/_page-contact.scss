@@ -1,0 +1,76 @@
+#section-contact {
+  .contact-wrapper {
+
+    .address {
+      padding: rem(20px);
+      position: relative;
+      @include media-breakpoint-up(lg) {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: rem(130px);
+      }
+      p {
+        text-align: center;
+        letter-spacing: 0.05em;
+        @include media-breakpoint-up(lg) {
+          font-size: rem(18px);
+          line-height: 2;
+        }
+      }
+      .bottom-lines,.top-lines {
+        &:after,&:before {
+          content: '';
+          position: absolute;
+          background: $color-active;
+        }
+      }
+      .bottom-lines {
+        &:before,&:after {
+          bottom: 65px;
+          left: 80px;
+        }
+        &:before {
+          width: 3px;
+          height: 60%;
+        }
+        &:after {
+          width: 30%;
+          height: 3px;
+        }
+      }
+      .top-lines {
+        &:before,&:after {
+          top: 65px;
+          right: 80px;
+        }
+        &:before {
+          width: 3px;
+          height: 60%;
+        }
+        &:after {
+          width: 30%;
+          height: 3px;
+        }
+      }
+    }
+
+    .map {
+      @include media-breakpoint-up(lg) {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .google-map{
+        display: flex;
+        .acf-map{
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

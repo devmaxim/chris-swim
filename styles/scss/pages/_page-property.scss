@@ -1,0 +1,123 @@
+.listing-template-default {
+  #section-property {
+    position: relative;
+
+    .column-2{
+      &:after {
+        @include pluses('+ + + + + +');
+        bottom: -20px;
+        letter-spacing: 10px;
+        left: 45px;
+        @include media-breakpoint-up(xl) {
+          left: 55px;
+        }
+
+      }
+    }
+
+    .property-image {
+      @include responsive-ratio-background(16,12);
+    }
+    .property-text {
+      padding: rem(30px);
+      @include media-breakpoint-up(lg) {
+        padding: rem(50px 30px);
+      }
+      @media (min-width: 1200px) and (max-width: 1410px) {
+        padding: rem(50px 30px);
+      }
+      @include media-breakpoint-up(xl) {
+        padding: rem(80px 40px);
+      }
+      .section-title {
+        text-align: left;
+        &:before {
+          content: none;
+        }
+        @include media-breakpoint-down(md) {
+          margin-bottom: rem(20px);
+        }
+        h1 {
+          @include responsive-font-size($h3-responsive-font-sizes);
+          letter-spacing: 0.05em;
+          line-height: 1.5;
+        }
+      }
+      h2.price {
+        font-size: 24px;
+        margin-bottom: rem(20px);
+        @include media-breakpoint-up(xl) {
+          margin-bottom: rem(40px);
+        }
+      }
+      ul.property-data {
+        display: flex;
+        margin-bottom: rem(20px);
+        @include media-breakpoint-up(xl) {
+          margin-bottom: rem(30px);
+        }
+        li:not(:last-child) {
+          &:after {
+            content: '|';
+            margin: 0 15px;
+          }
+        }
+      }
+    }
+
+
+  }
+
+  // Property Gallery
+  .property-gallery-wrapper {
+    .container-wide{
+      @include media-breakpoint-down(lg){
+        max-width: 100%;
+      }
+    }
+    #property-gallery {
+      margin-bottom: 0;
+      list-style: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      @include media-breakpoint-up(lg){
+        padding: 0 8px;
+      }
+      li{
+        @include make-col(12);
+        @include media-breakpoint-up(sm){
+          @include make-col(6);
+        }
+        @include media-breakpoint-up(lg){
+          @include make-col(4);
+        }
+        a{
+          display: block;
+          border: 8px solid white;
+          span.property-gallery-item-image{
+            display: block;
+            @include responsive-ratio-background(21,15,true);
+          }
+          &:hover{
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}
